@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#111111" />
+  <title>DEF CON 34 — AI Application Security Checklist — Outwire Field Guide</title>
+  <meta name="description" content="A free 10-minute AI application security checklist for builders using LLMs, RAG, agents, and AI-generated code." />
+  <meta property="og:title" content="Did you vibe-code an AI app? Check the blast radius." />
+  <meta property="og:description" content="24 practical AI security checks. No signup. Progress stays on your device." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://outwire.ai/dc34/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="checklist.css?v=20260714-3" />
+  <script type="module" src="checklist.js?v=20260714-3"></script>
+</head>
+<body>
+  <a class="skip-link" href="#checklist">Skip to checklist</a>
+
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="Outwire home">
+      <img class="brand-mark" src="../assets/outwire-shield-header.jpg" alt="" />
+      <span>OUTWIRE<sup>AI™</sup></span>
+    </a>
+    <span class="event-label">DEF CON 34 · LAS VEGAS</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="grid-texture" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="kicker">OUTWIRE FIELD GUIDE / DEF CON 34</p>
+        <h1 id="page-title">Did you vibe-code<br /><em>an AI app?</em></h1>
+        <p class="hero-lede">Run this practical security check before you ship it. Built for developers using LLM APIs, RAG, agents, and AI-generated code.</p>
+        <div class="hero-meta" aria-label="Checklist details">
+          <span>24 checks</span><span>10 minutes</span><span>No signup</span>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#checklist">Start the checklist <span aria-hidden="true">↓</span></a>
+          <button class="button button-ghost" type="button" data-open-profile>Profile my app <span class="optional">Optional</span></button>
+        </div>
+        <p class="local-note"><span aria-hidden="true">◉</span> Your answers and progress stay in this browser.</p>
+      </div>
+      <aside class="hero-panel" aria-label="Field guide summary">
+        <div class="panel-top"><span>PRE-FLIGHT REVIEW</span><span>v1.0</span></div>
+        <p class="terminal-line">$ outwire check --target your-ai-app</p>
+        <div class="panel-stat"><strong>08</strong><span>risk areas</span></div>
+        <div class="panel-stat"><strong>24</strong><span>essential checks</span></div>
+        <div class="panel-status"><span class="pulse"></span> READY FOR REVIEW</div>
+      </aside>
+    </section>
+
+    <section class="profile-section" id="risk-profile" hidden>
+      <div class="section-label">OPTIONAL / APP PROFILE</div>
+      <div class="profile-heading">
+        <div>
+          <h2>What can your app reach?</h2>
+          <p>Answer five questions to highlight relevant checks. Nothing is uploaded.</p>
+        </div>
+        <button class="text-button" type="button" data-clear-profile>Clear answers</button>
+      </div>
+      <div class="profile-questions" id="profile-questions"></div>
+    </section>
+
+    <section class="checklist-section" id="checklist" aria-labelledby="checklist-title">
+      <div class="print-masthead">
+        <strong>OUTWIRE FIELD GUIDE</strong>
+        <span>DEF CON 34 · AI APPLICATION SECURITY</span>
+      </div>
+      <div class="checklist-intro">
+        <div>
+          <p class="section-label">10-MINUTE REVIEW / 24 CHECKS</p>
+          <h2 id="checklist-title">Check the <em>blast radius.</em></h2>
+        </div>
+        <p>Review each item and mark what you find. This is a starting point—not a certification or guarantee of security.</p>
+      </div>
+
+      <div class="desktop-progress" aria-live="polite">
+        <div><span class="progress-count">0 of 24 reviewed</span><span class="progress-percent">0%</span></div>
+        <div class="progress-track"><span></span></div>
+      </div>
+
+      <div class="checklist-layout">
+        <div class="categories" id="categories"></div>
+        <aside class="review-card" id="review-card" aria-labelledby="review-title">
+          <p class="section-label">YOUR REVIEW</p>
+          <h3 id="review-title">Start with one check.</h3>
+          <div class="review-stats">
+            <div><strong data-stat="good">0</strong><span>Checks passed</span></div>
+            <div><strong data-stat="work">0</strong><span>Needs work</span></div>
+            <div><strong data-stat="open">24</strong><span>Not reviewed</span></div>
+          </div>
+          <div class="priority-results" hidden>
+            <h4>Priority actions</h4>
+            <ol id="priority-list"></ol>
+          </div>
+          <div class="review-actions">
+            <button class="button button-primary" type="button" data-copy-results disabled>Copy results</button>
+            <button class="button button-ghost" type="button" data-print-results disabled>Print / save PDF</button>
+            <button class="reset-button" type="button" data-reset-progress disabled>Reset progress</button>
+          </div>
+          <p class="action-message" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+      <div class="print-footer">
+        <strong>outwire.ai/dc34</strong>
+        <span>This self-assessment is a starting point, not a certification or guarantee of security.</span>
+        <span>Independent community resource. Not affiliated with or endorsed by DEF CON.</span>
+      </div>
+    </section>
+
+    <section class="signup-section" aria-labelledby="signup-title">
+      <div>
+        <p class="section-label">KEEP BUILDING SECURELY</p>
+        <h2 id="signup-title">Take the field guide <em>with you.</em></h2>
+        <p>Get the printable checklist, future updates, and early access to Outwire's guided AI security review.</p>
+      </div>
+      <div class="signup-column">
+        <div class="signup-embed">
+          <iframe
+            src="https://outwire.substack.com/embed"
+            title="Subscribe to Outwire on Substack"
+            width="480"
+            height="320"
+            loading="lazy"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+        <p class="signup-privacy"><span aria-hidden="true">◉</span> Private by design: the checklist works without signup, and your answers are never attached to your email.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><a href="../">OUTWIRE<sup>AI</sup></a><span>AI SECURITY FOR EVERYONE</span></div>
+    <p>Independent community resource. Not affiliated with or endorsed by DEF CON.</p>
+    <p>© 2026 Outwire · <a href="/privacy/">Privacy</a> · <a href="mailto:hello@outwire.ai">hello@outwire.ai</a></p>
+  </footer>
+
+  <div class="mobile-progress" aria-live="polite">
+    <div><span class="progress-count">0 of 24 reviewed</span><div class="progress-track"><span></span></div></div>
+    <button type="button" data-next-section>Next section ↓</button>
+  </div>
+
+  <template id="category-template">
+    <section class="category">
+      <button class="category-toggle" type="button" aria-expanded="false">
+        <span class="category-number"></span>
+        <span class="category-name"></span>
+        <span class="priority-badge" hidden>PRIORITY</span>
+        <span class="category-summary">0 / 3</span>
+        <span class="category-icon" aria-hidden="true">+</span>
+      </button>
+      <div class="category-content" hidden></div>
+    </section>
+  </template>
+</body>
+</html>
