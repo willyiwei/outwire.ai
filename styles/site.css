@@ -145,6 +145,8 @@ button { font-family: inherit; }
   background: color-mix(in oklab, var(--ink) 88%, transparent);
 }
 .topbar-inner {
+  position: relative;
+  width: 100%;
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 18px var(--gutter);
@@ -1119,10 +1121,14 @@ button { font-family: inherit; }
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 960px) {
   :root { --gutter: 24px; }
-  .topbar-inner { padding-block: 14px; }
+  html, body { max-width: 100%; overflow-x: hidden; }
+  .topbar-inner { z-index: 42; padding-block: 14px; }
+  .brand { min-width: 0; flex: 1 1 auto; overflow: hidden; }
   .brand, .menu-toggle { position: relative; z-index: 44; }
   .menu-toggle {
     display: flex;
+    flex: 0 0 auto;
+    z-index: 45;
     align-items: center;
     gap: 12px;
     padding: 9px 0 9px 12px;
@@ -1161,7 +1167,10 @@ button { font-family: inherit; }
   .nav a { display: block; padding: 15px 0; border-bottom: 1px solid var(--rule); font-family: var(--serif); font-size: 27px; color: var(--paper); }
   .nav a:first-child { color: var(--gold); }
   .nav a.cta { margin-top: 20px; padding: 13px 18px; border: 0; text-align: center; font-family: var(--sans); font-size: 14px; }
-  .hero-inner { grid-template-columns: 1fr; }
+  .hero-inner, .hero-copy, .hero-terminal { min-width: 0; }
+  .hero-inner { grid-template-columns: minmax(0, 1fr); }
+  .hero-terminal { max-width: 100%; }
+  .hero-terminal-body { overflow-wrap: anywhere; }
   .hero-mark { max-width: 320px; margin: 0 auto; }
   .hero-stats { grid-template-columns: 1fr; gap: 24px; }
   .section-head { grid-template-columns: 1fr; gap: 24px; }
@@ -1172,7 +1181,11 @@ button { font-family: inherit; }
   .resource { grid-template-columns: 60px 1fr; gap: 16px; }
   .resource .author, .resource .kind { display: none; }
   .consulting-wrap { grid-template-columns: 1fr; }
-  .contact-wrap { grid-template-columns: 1fr; gap: 48px; }
-  .hero.variant-terminal .hero-inner { grid-template-columns: 1fr; }
+  .contact-wrap { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .contact-email { max-width: 100%; overflow-wrap: anywhere; }
+  .channel { grid-template-columns: 40px minmax(0, 1fr) auto; gap: 16px; }
+  .footer-inner { grid-template-columns: minmax(0, 1fr); }
+  .footer-left { flex-wrap: wrap; }
+  .hero.variant-terminal .hero-inner { grid-template-columns: minmax(0, 1fr); }
   .tweaks { right: 12px; bottom: 12px; min-width: 240px; }
 }

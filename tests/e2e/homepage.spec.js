@@ -1,0 +1,19 @@
+import { expect, test } from '@playwright/test';
+
+test('homepage loads without browser errors', async ({ page }) => {
+  const errors = [];
+
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('console', message => {
+    if (message.type() === 'error') errors.push(message.text());
+  });
+
+  const response = await page.goto('/');
+
+  expect(response?.ok()).toBe(true);
+  await expect(page).toHaveTitle(/Outwire/i);
+  await expect(
+    page.getByRole('heading', { level: 1, name: /Break things before they ship/i }),
+  ).toBeVisible();
+  expect(errors).toEqual([]);
+});
