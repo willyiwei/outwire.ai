@@ -528,22 +528,29 @@ button { font-family: inherit; }
 }
 .about-portrait {
   aspect-ratio: 3/4;
-  background:
-    repeating-linear-gradient(135deg,
-      oklch(0.22 0.008 80) 0 8px,
-      oklch(0.17 0.008 80) 8px 16px);
   border: 1px solid var(--gold-dim);
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
-.about-portrait::after {
-  content: 'PORTRAIT';
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-portrait figcaption {
   position: absolute;
-  bottom: 12px; left: 12px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 24px 12px 10px;
+  background: linear-gradient(to top, oklch(0.1 0.008 80 / 0.88), transparent);
   font-family: var(--mono);
   font-size: 10px;
   letter-spacing: 0.2em;
-  color: var(--gold-dim);
+  color: var(--gold);
+  text-transform: uppercase;
 }
 .about-body p {
   font-family: var(--serif);

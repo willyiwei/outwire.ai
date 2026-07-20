@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { OUTWIRE_DATA } from './data.jsx';
+import portraitUrl from '../assets/will-yi-portrait.jpg';
 
 function SectionHead({ num, title, titleEm, titleAfter, sub }) {
   return (
@@ -29,7 +30,17 @@ export function About() {
           sub="Eighteen years in security and networking. Ten in leadership. Now focused on one question: how do we make AI systems trustworthy enough to ship?"
         />
         <div className="about-grid reveal">
-          <div className="about-portrait" />
+          <figure className="about-portrait">
+            <img
+              src={portraitUrl}
+              alt="Will Yi at a soccer stadium"
+              width="900"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>Will Yi · Outwire</figcaption>
+          </figure>
           <div className="about-body">
             <p>
               I&rsquo;ve spent nearly two decades inside security teams at
