@@ -8,6 +8,7 @@ export default defineConfig({
   forbidOnly: Boolean(process.env.CI),
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  grepInvert: process.env.E2E_BASE_URL ? undefined : /@production/,
   reporter: [['html', { open: 'never' }]],
   use: {
     baseURL: process.env.E2E_BASE_URL || localBaseURL,

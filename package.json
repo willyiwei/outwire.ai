@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "pretest:e2e": "vite build",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "test:production": "E2E_BASE_URL=https://outwire.ai playwright test --grep @production --project=desktop-chromium"
   },
   "dependencies": {
     "react": "19.2.7",
