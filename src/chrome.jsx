@@ -161,6 +161,19 @@ function App() {
   const [tweaksOpen, setTweaksOpen] = React.useState(false);
 
   React.useEffect(() => {
+    if (!window.location.hash) return;
+
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    const frame = window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        document.getElementById(id)?.scrollIntoView();
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  React.useEffect(() => {
     const root = document.documentElement;
     root.setAttribute('data-gold', values.gold);
     root.setAttribute('data-display', values.display);

@@ -17,3 +17,10 @@ test('homepage loads without browser errors', async ({ page }) => {
   ).toBeVisible();
   expect(errors).toEqual([]);
 });
+
+test('homepage loads a linked section from the URL fragment', async ({ page }) => {
+  await page.goto('/#content');
+
+  await expect(page.locator('#content')).toBeInViewport();
+  await expect(page).toHaveURL(/#content$/);
+});

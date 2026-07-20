@@ -58,23 +58,17 @@ export const OUTWIRE_DATA = {
 
   videos: [
     {
-      tag: 'EP.07',
-      duration: '18:42',
-      date: 'Apr 2026',
+      status: 'Planned episode',
       title: "Your RAG Pipeline Is a Security Nightmare (Here's Why)",
       accent: 'indirect prompt injection — live demo',
     },
     {
-      tag: 'EP.06',
-      duration: '24:10',
-      date: 'Mar 2026',
+      status: 'Planned episode',
       title: "I Red-Teamed a Production LLM Agent. It Didn't Go Well.",
       accent: 'field notes from the trenches',
     },
     {
-      tag: 'EP.05',
-      duration: '12:55',
-      date: 'Mar 2026',
+      status: 'Planned episode',
       title: 'The OWASP Top 10 for LLMs, Explained',
       accent: 'what every engineer should know',
     },
@@ -82,30 +76,22 @@ export const OUTWIRE_DATA = {
 
   posts: [
     {
-      n: '№ 012',
-      date: 'Apr 11, 2026',
-      readtime: '8 min',
+      status: 'Planned essay',
       title: 'Why Every AI Agent Needs a Blast Radius',
       excerpt: 'The principle of least privilege is 50 years old. LLM agents are about to rediscover it — painfully.',
     },
     {
-      n: '№ 011',
-      date: 'Apr 03, 2026',
-      readtime: '11 min',
+      status: 'Planned essay',
       title: 'A Threat Model for Your Customer Support Chatbot',
       excerpt: 'Six attack paths, three mitigations, and one uncomfortable truth about vendor isolation.',
     },
     {
-      n: '№ 010',
-      date: 'Mar 27, 2026',
-      readtime: '6 min',
+      status: 'Planned essay',
       title: 'The Quiet Rise of Indirect Prompt Injection',
       excerpt: "Your model is fine. The document it just summarized, on the other hand, isn't.",
     },
     {
-      n: '№ 009',
-      date: 'Mar 18, 2026',
-      readtime: '14 min',
+      status: 'Planned essay',
       title: 'CISSP for the AI-Native Engineer',
       excerpt: 'Notes from the domain, translated for people who build with foundation models.',
     },

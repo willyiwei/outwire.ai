@@ -43,6 +43,7 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 64px; }
 body {
   background: var(--ink);
   color: var(--paper);
@@ -668,10 +669,10 @@ button { font-family: inherit; }
 .video-card {
   display: block;
   margin-bottom: 32px;
-  cursor: pointer;
   transition: transform 300ms;
 }
-.video-card:hover { transform: translateY(-2px); }
+.video-card:not(.planned) { cursor: pointer; }
+.video-card:not(.planned):hover { transform: translateY(-2px); }
 .video-thumb {
   position: relative;
   aspect-ratio: 16/9;
@@ -682,7 +683,7 @@ button { font-family: inherit; }
   margin-bottom: 16px;
   transition: border-color 240ms;
 }
-.video-card:hover .video-thumb { border-color: var(--gold); }
+.video-card:not(.planned):hover .video-thumb { border-color: var(--gold); }
 .video-thumb .thumb-pattern {
   position: absolute; inset: 0;
   background-image:
@@ -712,9 +713,9 @@ button { font-family: inherit; }
   background: color-mix(in oklab, var(--ink) 60%, transparent);
   transition: background 240ms, transform 240ms;
 }
-.video-card:hover .thumb-play { background: var(--gold); transform: translate(-50%, -50%) scale(1.08); }
+.video-card:not(.planned):hover .thumb-play { background: var(--gold); transform: translate(-50%, -50%) scale(1.08); }
 .thumb-play svg path { fill: var(--gold); transition: fill 240ms; }
-.video-card:hover .thumb-play svg path { fill: var(--ink); }
+.video-card:not(.planned):hover .thumb-play svg path { fill: var(--ink); }
 .video-thumb .thumb-duration {
   position: absolute;
   top: 12px; right: 12px;
@@ -744,7 +745,7 @@ button { font-family: inherit; }
   font-weight: 400;
   margin: 0;
 }
-.video-card:hover .video-title { color: var(--gold); }
+.video-card:not(.planned):hover .video-title { color: var(--gold); }
 
 .post-card {
   display: block;
@@ -753,7 +754,7 @@ button { font-family: inherit; }
   transition: padding 240ms;
 }
 .post-card:first-child { padding-top: 0; }
-.post-card:hover { padding-left: 12px; }
+.post-card:not(.planned):hover { padding-left: 12px; }
 .post-meta {
   display: flex; gap: 16px;
   font-family: var(--mono);
@@ -773,7 +774,7 @@ button { font-family: inherit; }
   margin: 0 0 8px;
   transition: color 240ms;
 }
-.post-card:hover .post-title { color: var(--gold); }
+.post-card:not(.planned):hover .post-title { color: var(--gold); }
 .post-excerpt {
   font-size: 14px;
   line-height: 1.6;

@@ -118,7 +118,7 @@ export function Content() {
           num="§ 03 / DISPATCHES"
           title="Latest"
           titleEm="work."
-          sub="New episodes on YouTube. Long-form essays on Substack. Both free, both every week."
+          sub="Practical AI security videos and long-form essays. New work will appear here when it is ready."
         />
         <div className="content-split reveal">
           <div className="content-col">
@@ -127,23 +127,18 @@ export function Content() {
               <span>On YouTube.</span>
             </h3>
             {OUTWIRE_DATA.videos.map(v => (
-              <a key={v.tag} className="video-card" href="https://www.youtube.com/@outwireai" target="_blank" rel="noopener">
+              <article key={v.title} className="video-card planned">
                 <div className="video-thumb">
                   <div className="thumb-pattern" />
-                  <div className="thumb-duration">{v.duration}</div>
-                  <div className="thumb-play">
-                    <svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 3l9 5-9 5z"/></svg>
-                  </div>
+                  <div className="thumb-duration">Planned</div>
                   <div className="thumb-label">{v.accent}</div>
                 </div>
                 <div className="video-meta">
                   <span className="dot">●</span>
-                  <span>{v.tag}</span>
-                  <span>&middot;</span>
-                  <span>{v.date}</span>
+                  <span>{v.status}</span>
                 </div>
                 <h4 className="video-title">{v.title}</h4>
-              </a>
+              </article>
             ))}
             <a className="col-cta" href="https://www.youtube.com/@outwireai" target="_blank" rel="noopener">
               All episodes
@@ -156,16 +151,13 @@ export function Content() {
               <span>On Substack.</span>
             </h3>
             {OUTWIRE_DATA.posts.map(p => (
-              <a key={p.n} className="post-card" href="https://outwire.substack.com/" target="_blank" rel="noopener">
+              <article key={p.title} className="post-card planned">
                 <div className="post-meta">
-                  <span className="num">{p.n}</span>
-                  <span>{p.date}</span>
-                  <span>&middot;</span>
-                  <span>{p.readtime}</span>
+                  <span className="num">{p.status}</span>
                 </div>
                 <h4 className="post-title">{p.title}</h4>
                 <p className="post-excerpt">{p.excerpt}</p>
-              </a>
+              </article>
             ))}
             <a className="col-cta" href="https://outwire.substack.com/" target="_blank" rel="noopener">
               Full archive
