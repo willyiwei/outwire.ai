@@ -24,3 +24,15 @@ test('homepage loads a linked section from the URL fragment', async ({ page }) =
   await expect(page.locator('#content')).toBeInViewport();
   await expect(page).toHaveURL(/#content$/);
 });
+
+test('published dispatch links to its Substack article', async ({ page }) => {
+  await page.goto('/#content');
+
+  const article = page.getByRole('link', {
+    name: /Your AI Agent Has a Blast Radius/i,
+  });
+  await expect(article).toHaveAttribute(
+    'href',
+    'https://outwire.substack.com/p/your-ai-agent-has-a-blast-radius?r=57ywg7',
+  );
+});

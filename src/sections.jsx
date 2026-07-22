@@ -150,15 +150,27 @@ export function Content() {
               <span className="mono-label">Essay</span>
               <span>On Substack.</span>
             </h3>
-            {OUTWIRE_DATA.posts.map(p => (
-              <article key={p.title} className="post-card planned">
-                <div className="post-meta">
-                  <span className="num">{p.status}</span>
-                </div>
-                <h4 className="post-title">{p.title}</h4>
-                <p className="post-excerpt">{p.excerpt}</p>
-              </article>
-            ))}
+            {OUTWIRE_DATA.posts.map(p => {
+              const contents = (
+                <>
+                  <div className="post-meta">
+                    <span className="num">{p.status}</span>
+                  </div>
+                  <h4 className="post-title">{p.title}</h4>
+                  <p className="post-excerpt">{p.excerpt}</p>
+                </>
+              );
+
+              return p.url ? (
+                <a key={p.title} className="post-card" href={p.url} target="_blank" rel="noopener">
+                  {contents}
+                </a>
+              ) : (
+                <article key={p.title} className="post-card planned">
+                  {contents}
+                </article>
+              );
+            })}
             <a className="col-cta" href="https://outwire.substack.com/" target="_blank" rel="noopener">
               Full archive
             </a>

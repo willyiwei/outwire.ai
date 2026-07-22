@@ -76,9 +76,10 @@ export const OUTWIRE_DATA = {
 
   posts: [
     {
-      status: 'Planned essay',
-      title: 'Why Every AI Agent Needs a Blast Radius',
-      excerpt: 'The principle of least privilege is 50 years old. LLM agents are about to rediscover it — painfully.',
+      status: 'Published · Jul 21, 2026',
+      title: 'Your AI Agent Has a Blast Radius. Do You Know How Big It Is?',
+      excerpt: 'Before you give an AI agent access to email, customer data, code, or money, measure how much damage one bad decision could cause.',
+      url: 'https://outwire.substack.com/p/your-ai-agent-has-a-blast-radius?r=57ywg7',
     },
     {
       status: 'Planned essay',
