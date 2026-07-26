@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="675" viewBox="0 0 1125 675" role="img" aria-labelledby="title desc">
+  <title id="title">Outwire DEF CON 34 checklist card front</title>
+  <desc id="desc">Black and gold card asking whether the reader vibe-coded an AI app, with a QR code for the security checklist.</desc>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#FAFAFA" stroke-opacity=".055" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#111111" stop-opacity="0"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@500;600&amp;family=Inter+Tight:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .sans { font-family: 'Inter Tight', Arial, sans-serif; }
+      .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    </style>
+  </defs>
+
+  <rect width="1125" height="675" fill="#111111"/>
+  <rect width="1125" height="675" fill="url(#grid)"/>
+  <rect x="684" width="441" height="675" fill="url(#fade)"/>
+  <path d="M60 59H1065" stroke="#D4A017" stroke-width="2"/>
+
+  <text x="75" y="103" class="mono" fill="#D4A017" font-size="25" font-weight="500" letter-spacing="2.5">OUTWIRE AI SECURITY CHECKLIST / DEF CON 34</text>
+
+  <text x="74" y="220" class="sans" fill="#FAFAFA" font-size="78" font-weight="600" letter-spacing="-2">DID YOU</text>
+  <text x="74" y="302" class="serif" fill="#D4A017" font-size="94" font-style="italic" font-weight="600" letter-spacing="-2">VIBE-CODE</text>
+  <text x="74" y="382" class="sans" fill="#FAFAFA" font-size="78" font-weight="600" letter-spacing="-2">AN AI APP?</text>
+
+  <text x="77" y="453" class="sans" fill="#B0B0B0" font-size="34">Run this 10-minute security check</text>
+  <text x="77" y="493" class="sans" fill="#B0B0B0" font-size="34">before you ship.</text>
+
+  <rect x="765" y="137" width="285" height="285" rx="4" fill="#FAFAFA"/>
+  <image href="outwire-dc34-qr.svg" x="773" y="145" width="269" height="269"/>
+  <text x="907.5" y="462" class="mono" fill="#FAFAFA" font-size="25" text-anchor="middle" letter-spacing="1">OUTWIRE.AI/DC34</text>
+  <text x="907.5" y="501" class="sans" fill="#888888" font-size="24" text-anchor="middle">Scan to start</text>
+
+  <path d="M75 558H1050" stroke="#FAFAFA" stroke-opacity=".13"/>
+  <text x="75" y="594" class="mono" fill="#FAFAFA" font-size="27" letter-spacing="1.5">24 CHECKS</text>
+  <circle cx="270" cy="587" r="4" fill="#D4A017"/>
+  <text x="300" y="594" class="mono" fill="#FAFAFA" font-size="27" letter-spacing="1.5">FREE</text>
+  <circle cx="412" cy="587" r="4" fill="#D4A017"/>
+  <text x="442" y="594" class="mono" fill="#FAFAFA" font-size="27" letter-spacing="1.5">NO SIGNUP</text>
+</svg>

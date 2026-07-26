@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1125" height="675" viewBox="0 0 1125 675" role="img" aria-labelledby="title desc">
+  <title id="title">Outwire DEF CON 34 checklist card back</title>
+  <desc id="desc">Outwire identity, practical AI security description, and Will Yi contact information.</desc>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0V60" fill="none" stroke="#FAFAFA" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="18%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#D4A017" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#111111" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@500;600&amp;family=Inter+Tight:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap');
+      .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+      .sans { font-family: 'Inter Tight', Arial, sans-serif; }
+      .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+    </style>
+  </defs>
+
+  <rect width="1125" height="675" fill="#111111"/>
+  <rect width="1125" height="675" fill="url(#grid)"/>
+  <rect width="1125" height="675" fill="url(#glow)"/>
+  <path d="M60 59H1065" stroke="#D4A017" stroke-width="2"/>
+
+  <image href="../../assets/outwire-shield-header.jpg" x="75" y="94" width="104" height="104"/>
+  <text x="205" y="151" class="sans" fill="#FAFAFA" font-size="45" font-weight="600" letter-spacing="-1">OUTWIRE</text>
+  <text x="425" y="126" class="sans" fill="#D4A017" font-size="19" font-weight="600">AI™</text>
+  <text x="207" y="184" class="mono" fill="#888888" font-size="17" letter-spacing="2">AI SECURITY FOR EVERYONE</text>
+
+  <text x="75" y="300" class="serif" fill="#FAFAFA" font-size="54" font-weight="600">Practical AI security.</text>
+  <text x="75" y="369" class="serif" fill="#D4A017" font-size="68" font-style="italic" font-weight="600">Put it to work.</text>
+
+  <text x="77" y="439" class="sans" fill="#B0B0B0" font-size="32">For builders using LLMs, RAG, agents,</text>
+  <text x="77" y="479" class="sans" fill="#B0B0B0" font-size="32">and AI-generated code.</text>
+
+  <path d="M686 238V574" stroke="#FAFAFA" stroke-opacity=".13"/>
+  <text x="747" y="301" class="mono" fill="#D4A017" font-size="22" letter-spacing="2">CREATED BY</text>
+  <text x="747" y="348" class="sans" fill="#FAFAFA" font-size="34" font-weight="600">WILL YI</text>
+  <text x="747" y="386" class="mono" fill="#888888" font-size="22" letter-spacing="1.5">SEATTLE, WA</text>
+
+  <text x="747" y="473" class="mono" fill="#FAFAFA" font-size="30">hello@outwire.ai</text>
+  <text x="747" y="521" class="mono" fill="#FAFAFA" font-size="30">outwire.ai</text>
+
+  <path d="M75 574H1050" stroke="#FAFAFA" stroke-opacity=".13"/>
+  <text x="75" y="596" class="mono" fill="#888888" font-size="21" letter-spacing="1.7">OUTWIRE AI SECURITY CHECKLIST / DEF CON 34</text>
+</svg>
