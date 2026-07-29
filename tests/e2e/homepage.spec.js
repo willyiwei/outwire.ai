@@ -25,14 +25,22 @@ test('homepage loads a linked section from the URL fragment', async ({ page }) =
   await expect(page).toHaveURL(/#content$/);
 });
 
-test('published dispatch links to its Substack article', async ({ page }) => {
+test('published dispatches link to their Substack articles', async ({ page }) => {
   await page.goto('/#content');
 
-  const article = page.getByRole('link', {
+  const blastRadiusArticle = page.getByRole('link', {
     name: /Your AI Agent Has a Blast Radius/i,
   });
-  await expect(article).toHaveAttribute(
+  await expect(blastRadiusArticle).toHaveAttribute(
     'href',
     'https://outwire.substack.com/p/your-ai-agent-has-a-blast-radius?r=57ywg7',
+  );
+
+  const threatModelArticle = page.getByRole('link', {
+    name: /Threat Modeling Your AI Chatbot/i,
+  });
+  await expect(threatModelArticle).toHaveAttribute(
+    'href',
+    'https://open.substack.com/pub/outwire/p/threat-modeling-your-ai-chatbot',
   );
 });

@@ -82,9 +82,10 @@ export const OUTWIRE_DATA = {
       url: 'https://outwire.substack.com/p/your-ai-agent-has-a-blast-radius?r=57ywg7',
     },
     {
-      status: 'Planned essay',
-      title: 'A Threat Model for Your Customer Support Chatbot',
-      excerpt: 'Six attack paths, three mitigations, and one uncomfortable truth about vendor isolation.',
+      status: 'Published · Jul 28, 2026',
+      title: 'Threat Modeling Your AI Chatbot',
+      excerpt: 'Six attack paths to check before you connect a chatbot to customer data and business tools.',
+      url: 'https://open.substack.com/pub/outwire/p/threat-modeling-your-ai-chatbot',
     },
     {
       status: 'Planned essay',
