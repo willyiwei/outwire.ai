@@ -2,13 +2,13 @@
 export const OUTWIRE_DATA = {
   profile: {
     name: 'Will Yi',
-    role: 'AI Security Professional · Founder',
+    role: 'Security & Software Engineering Leader · AI Platform Security',
     location: 'Seattle WA · Remote',
     experience: '18 years',
-    leadership: '10 years',
+    leadership: '11 years',
     companies: ['Cisco Systems', 'WatchGuard Technologies'],
     credentials: [
-      'CISSP (in progress)',
+      'CISSP',
       'AWS Solutions Architect – Associate',
       'PMP',
       'Certified ScrumMaster (CSM)',

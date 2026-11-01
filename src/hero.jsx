@@ -53,7 +53,7 @@ function HeroShield() {
               <div className="label">Security &amp; networking</div>
             </div>
             <div className="hero-stat">
-              <div className="num">10<sup>yrs</sup></div>
+              <div className="num">11<sup>yrs</sup></div>
               <div className="label">Engineering leadership</div>
             </div>
             <div className="hero-stat">

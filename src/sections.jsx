@@ -27,7 +27,7 @@ export function About() {
           num="§ 01 / ABOUT"
           title="Written by"
           titleEm="Will Yi."
-          sub="Eighteen years in security and networking. Ten in leadership. Now focused on one question: how do we make AI systems trustworthy enough to ship?"
+          sub="Eighteen years in security and software engineering. Ten in leadership. Now focused on one question: how do we make AI systems trustworthy enough to ship?"
         />
         <div className="about-grid reveal">
           <figure className="about-portrait">
@@ -43,14 +43,15 @@ export function About() {
           </figure>
           <div className="about-body">
             <p>
-              I&rsquo;ve spent nearly two decades inside security teams at
-              <em> Cisco</em> and <em>WatchGuard</em>, building and leading the
-              engineering work behind firewalls, intrusion prevention, and the
-              unsexy infrastructure that quietly keeps enterprises online.
+              I&rsquo;ve spent 18 years in software, 11 of them at WatchGuard holding security validation and release sign-off for 10+ production security products across firewall, proxy, identity, endpoint, and Wi-Fi.
+
+              At Cisco I lead 9 engineers building AI systems for 12M+ production devices. The current work is platform security for agentic AI: trust boundaries and least-privilege access for autonomous agents, model and output validation for AI-driven recommendations, and data integrity controls across distributed AI pipelines.
+
+              The through-line is software lifecycle depth applied to security: knowing where vulnerabilities hide in the development cycle, and building controls developers can actually ship with.
             </p>
             <p>
               <em>Outwire</em> is the next chapter &mdash; a journal, a channel,
-              and soon a consulting practice focused on the security problems
+              and a consulting practice focused on the security problems
               that arrive with foundation models. The goal is not hype. It is
               threat models, working code, and honest field notes.
             </p>
@@ -58,8 +59,7 @@ export function About() {
               <div>
                 <div className="label">Currently</div>
                 <div className="value">
-                  Engineering Manager &middot; transitioning into AI Security
-                  engineering &amp; leadership
+                  Security &amp; Software Engineering Leader &middot; AI Platform Security
                 </div>
               </div>
               <div>
@@ -70,7 +70,7 @@ export function About() {
                 <div className="label">Background</div>
                 <div className="value">
                   <strong>CISCO</strong> · <strong>WATCHGUARD</strong><br/>
-                  18 yrs security &amp; networking &middot; 10 yrs leadership
+                  18 yrs security &amp; networking &middot; 11 yrs leadership
                 </div>
               </div>
               <div>
@@ -213,8 +213,8 @@ export function Consulting() {
         <SectionHead
           num="§ 05 / PRACTICE"
           title="Consulting,"
-          titleEm="soon."
-          sub="A practice focused on AI security for product teams. Threat models, red-team engagements, and architecture reviews, starting later this year."
+          titleEm="now."
+          sub="A practice focused on AI security for product teams. Threat models, red-team engagements, and architecture reviews."
         />
         <div className="consulting-wrap reveal">
           <div className="consulting-body">
